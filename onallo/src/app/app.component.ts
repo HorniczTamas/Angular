@@ -9,7 +9,7 @@ import { UserInputComponent } from './user-input/user-input.component';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  calculateInvestmentResults( data: {
+  oncalculateInvestmentResults( data: {
     initialInvestment: number, 
     annualInvestment: number, 
     expectedReturn: number, 
@@ -34,7 +34,7 @@ export class AppComponent {
     });
   }
 
-  return annualData;
+  console.log(annualData);
 }
 
 }
