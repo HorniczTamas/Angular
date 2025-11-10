@@ -9,12 +9,13 @@ import { UserInputComponent } from './user-input/user-input.component';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  calculateInvestmentResults(
+  calculateInvestmentResults(data: {
     initialInvestment: number,
     annualInvestment: number,
     expectedReturn: number,
     duration: number
-  ) {
+  }) {
+    const { initialInvestment, annualInvestment, expectedReturn, duration } = data;
     const annualData = [];
     let investmentValue = initialInvestment;
 
